@@ -260,59 +260,162 @@ def view_report():
 # =====================================================
 
 root = tk.Tk()
-root.title("Face Attendance Management System")
-root.geometry("500x550")
-root.resizable(False, False)
 
-# Modern Dark Theme Colors
-BG_COLOR = "#1e1e2e"
-TEXT_COLOR = "#cdd6f4"
-BTN_BG = "#89b4fa"
-BTN_FG = "#11111b"
-BTN_ACTIVE_BG = "#f38ba8"
-BTN_ACTIVE_FG = "#11111b"
-FONT = ("Segoe UI", 12, "bold")
+root.title(
+    "Face Attendance Management System"
+)
 
-root.configure(bg=BG_COLOR)
+root.geometry(
+    "500x450"
+)
+
+root.resizable(
+    False,
+    False
+)
 
 title = tk.Label(
-    root,
-    text="FACE ATTENDANCE\nMANAGEMENT SYSTEM",
-    font=("Segoe UI", 20, "bold"),
-    bg=BG_COLOR,
-    fg=TEXT_COLOR
-)
-title.pack(pady=30)
 
-def create_btn(text, command, bg_color=BTN_BG):
-    return tk.Button(
-        root,
-        text=text,
-        font=FONT,
-        width=25,
-        height=2,
-        bg=bg_color,
-        fg=BTN_FG,
-        activebackground=BTN_ACTIVE_BG,
-        activeforeground=BTN_ACTIVE_FG,
-        relief=tk.FLAT,
-        cursor="hand2",
-        command=command
+    root,
+
+    text=
+    "FACE ATTENDANCE\nMANAGEMENT SYSTEM",
+
+    font=(
+        "Arial",
+        18,
+        "bold"
     )
 
-btn1 = create_btn("Start Attendance", start_attendance, bg_color="#a6e3a1") # Green
-btn1.pack(pady=10)
+)
 
-btn2 = create_btn("View Report", view_report)
-btn2.pack(pady=10)
+title.pack(
+    pady=20
+)
 
-btn3 = create_btn("View Database", view_database)
-btn3.pack(pady=10)
+btn1 = tk.Button(
 
-btn4 = create_btn("Export CSV", export_csv, bg_color="#f9e2af") # Yellow
-btn4.pack(pady=10)
+    root,
 
-btn5 = create_btn("Exit", root.destroy, bg_color="#f38ba8") # Red
-btn5.pack(pady=10)
+    text=
+    "Start Attendance",
+
+    font=(
+        "Arial",
+        12
+    ),
+
+    width=25,
+
+    height=2,
+
+    command=
+    start_attendance
+
+)
+
+btn1.pack(
+    pady=10
+)
+
+btn2 = tk.Button(
+
+    root,
+
+    text=
+    "View Report",
+
+    font=(
+        "Arial",
+        12
+    ),
+
+    width=25,
+
+    height=2,
+
+    command=
+    view_report
+
+)
+
+btn2.pack(
+    pady=10
+)
+
+btn3 = tk.Button(
+
+    root,
+
+    text=
+    "View Database",
+
+    font=(
+        "Arial",
+        12
+    ),
+
+    width=25,
+
+    height=2,
+
+    command=
+    view_database
+
+)
+
+btn3.pack(
+    pady=10
+)
+
+btn4 = tk.Button(
+
+    root,
+
+    text=
+    "Export CSV",
+
+    font=(
+        "Arial",
+        12
+    ),
+
+    width=25,
+
+    height=2,
+
+    command=
+    export_csv
+
+)
+
+btn4.pack(
+    pady=10
+)
+
+btn5 = tk.Button(
+
+    root,
+
+    text=
+    "Exit",
+
+    font=(
+        "Arial",
+        12
+    ),
+
+    width=25,
+
+    height=2,
+
+    command=
+    root.destroy
+
+)
+
+btn5.pack(
+    pady=10
+)
 
 root.mainloop()
