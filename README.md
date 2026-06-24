@@ -19,6 +19,16 @@ A robust, real-time facial recognition attendance system with a graphical user i
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/screenshot1.png" width="30%" alt="Main Application Dashboard">
+  <img src="assets/screenshot2.png" width="30%" alt="Daily Attendance Report">
+  <img src="assets/screenshot3.png" width="30%" alt="Real-Time Face Recognition">
+</p>
+
+---
+
 ## 🚀 Installation
 
 1. **Clone the repository:**
